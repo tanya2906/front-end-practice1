@@ -1,0 +1,94 @@
+.team{
+    background-color: #2F1893;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 80px;
+    border: 1px solid #c2c2c254;
+    padding: 100px;
+}
+.team .title{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.team .members{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 80px;
+    column-gap: 100px;
+}
+.team .members .member{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.team .members .member img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.team .members .member .position{
+    font-size: x-small;
+}
+.team .members .member .social{
+    display: flex;
+    gap: 10px;
+    font-size: x-small;
+}
+@media only screen and (max-width:850px){
+    .team .members{
+        grid-template-columns: auto auto ;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .team .title{
+        width: 500px;
+    }
+    .team{
+        padding:100px 50px;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+@media only screen and (max-width:750px){
+    .team .title{
+        width: 500px;
+    }
+}
+@media only screen and (max-width:600px){
+    .team .title{
+        width: 400px;
+    }
+}
+@media only screen and (max-width:500px){
+    .team{
+        font-size: x-small;
+        gap: 50px;
+        padding: 50px;
+    }
+    .team .title{
+        width: 200px;
+    }
+    .team .members{
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+    .team .members .member img{
+        width: 50px;
+        height: 50px;
+    }
+    .team .members .member p{
+        font-size: 10px;
+    }
+    .team .members .member .position{
+        font-size: xx-small;
+    }
+    .team .members .member .social{
+        display: flex;
+        gap: 5px;
+        font-size: xx-small;
+    }
+}

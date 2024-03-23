@@ -1,0 +1,62 @@
+.call_to_action{
+    background-image: url(/public/images/calltoaction.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+.call_to_action .cta__button{
+    display: flex;
+    gap: 20px;
+}
+.call_to_action h1{
+    width: 320px;
+}
+.call_to_action p{
+    width: 450px;
+}
+.call_to_action .cta__button div{
+   
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #25DAC5;
+}
+.call_to_action .cta__button div:hover{
+    background-color: #25dac5c0;
+    color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+.call_to_action .cta__button i{
+    background-color:#EA3223;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+.call_to_action .cta__button i:hover{
+    background-color: #ea3423c8;
+    color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+.call_to_action .cta__button .call{
+    height: 15px;
+    width: 15px;
+}
+@media only screen and (max-width:500px){
+    .call_to_action{
+        font-size: x-small;
+        height: 400px;
+        gap: 30px;
+    }
+    .call_to_action h1{
+        width: 240px;
+    }
+    .call_to_action p{
+        width: 230px;
+    }
+}

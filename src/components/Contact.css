@@ -1,0 +1,118 @@
+.contact{
+    background-image: url(/public/images/contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 100px;
+    
+}
+.contact .contact_form{
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px  #ffffffa4;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+.contact .contact_form button{
+    background: #25DAC5;
+    width:fit-content;
+    border-color: #25DAC5;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.contact .contact_form button:hover{
+    background-color: #25dac5c0;
+    color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+.contact .contact_form input{
+    border-color: rgb(206, 206, 206);
+    padding: 10px;
+    border-radius: 50px;
+    color: #1E0E62;
+}
+.contact .contact_form textarea{ 
+    border-color: rgb(206, 206, 206);
+    padding: 10px;
+    border-radius: 20px;
+    color: #1E0E62;
+}
+.contact .contact_form label{ 
+    color: #1E0E62;
+    font-size: x-small;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+.contact .contacts {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.contact .contacts span{
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media only screen and (max-width:1120px){
+    .contact{
+        padding: 100px 50px;
+        gap: 50px;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+}
+@media only screen and (max-width:1000px){
+    .contact{
+        flex-direction: column;
+        gap: 100px;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+@media only screen and (max-width:500px){
+    .contact{
+        flex-direction: column;
+        gap: 100px;font-size: x-small;
+    }
+    .contact .contact_form{
+        width: 200px;
+        
+        padding: 20px;
+        gap: 20px;
+    }
+    .contact .contact_form input,
+    .contact .contact_form textarea{
+        font-size: x-small;
+        padding: 8px;
+    }
+    .contact .contact_form button{
+        font-size: x-small;
+        padding: 8px 15px;
+    }
+    .contact .contact_form label{
+        font-size: xx-small;
+    }
+    .contact .contacts {
+        width: 205px;
+        
+        gap: 20px;
+    }
+    .contact .contacts span{
+        font-size: xx-small;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: lighter;
+    }
+}

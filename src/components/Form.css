@@ -1,0 +1,142 @@
+.form{
+    background-image: url(/public/images/form.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.form .sign_up_form form{
+    border: 1px solid rgba(255, 255, 255, 0);
+    height: 500px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px  #ffffffa4;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.form .sign_up_form .input_field_type ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 190px;
+}
+.form .sign_up_form .input_field_type li{
+    color: #1E1E1E;
+    font-weight: bold;
+    position: relative;
+}
+.form .sign_up_form .input_field_type li::before{
+    content: '';
+    height: 5px;
+    width: 250px;
+    background-color: #1E1E1E;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: -95px;
+}
+.form .sign_up_form .input_fields{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 30px;
+}
+.form .sign_up_form .input_fields input{
+    padding: 0px 10px;
+    height: 40px;
+    color: #1E1E1E;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 226, 226);
+}
+.form .sign_up_form .input_fields #create_account{
+    background-color: #25DAC5;
+    color: white;
+}
+.form .sign_up_form .input_fields #create_account:hover{
+    background-color: #25dac5c0;
+    color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+.form .sign_up_form .login_via{
+    background-color: #1DA1F2;
+    width: 310px;
+    padding: 7px 10px;
+    
+    border-radius: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+.form .sign_up_form .login_via:hover{
+    background-color: #1da0f2c3;
+    color: rgb(206, 206, 206);
+}
+.form .title{
+    height: 318px;
+    width: 369px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form .title p{
+    text-align: justify;
+}
+@media only screen and (max-width:1170px){
+    .form{
+        flex-direction: column;
+        gap: 50px;
+        height: 1100px;
+        justify-items: space-around;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+@media only screen and (max-width:500px){
+    .form{
+        font-size: x-small;
+        height: 690px;
+        padding: 60px 0px;
+        gap:10px;
+    }
+    .form .title{
+        width: 240px;
+    }
+    .form .sign_up_form form{
+        width: 250px;
+        height: 420px;
+    }
+    .form .sign_up_form .input_fields{
+        width: 200px;
+    }
+    .form .sign_up_form .login_via{
+        width: 180px;
+        padding: 10px;
+        font-size: xx-small;
+    }
+    .form .sign_up_form .input_field_type li{
+        font-weight: normal;
+        font-size: xx-small;
+    }
+    .form .sign_up_form .input_field_type ul{
+        gap: 60px;
+    }
+    .form .sign_up_form .input_field_type li::before{
+        width: 100px;
+        left: -30px;
+    }
+    .form .sign_up_form .input_fields input{
+        font-size: xx-small;
+    }
+}

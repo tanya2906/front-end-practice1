@@ -1,0 +1,139 @@
+.features{
+    background-image: url(/public/images/feature.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 736px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:10px;
+}
+.features .mockup{
+    height: 535px;
+    width: 492px;
+    position: relative;
+}
+.features .mockup  img {
+    position: absolute;
+}
+.features .mockup img:last-child{
+    top: 20px;
+} 
+.features .dots{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.features .dots i .dot{
+    fill: rgba(194, 194, 194, 0.651);
+    width: 10px;
+    height: 10px;
+}
+.features .dots i .active{
+    fill: white;
+}
+.features div .title{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.features .Content .text{
+    width: 600px;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+}
+.features .Content{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 492px);
+    padding: 20px;
+    align-items: center;
+    
+}
+.features .sub_title{
+    display: flex;
+    justify-content: space-between;
+}
+.features .feature1,
+.features .feature2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 290px;
+    font-size: x-small;
+}
+.features .feature1 i .icon,
+.features .feature2 i .icon{
+    height: 30px;
+    width: 30px;
+    
+}
+@media only screen and (max-width:1200px){
+    .features .mockup{
+        display: none;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .features {
+        justify-content: center;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .features .Content{
+        width: 700px;
+    }
+}
+@media only screen and (max-width:800px){
+    .features .dots{
+        display: none;
+    }
+    .features .Content{
+        width: 90%;
+        justify-content: center;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+@media only screen and (max-width:700px){
+    .features .Content .text{
+        width: 300px;
+        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .features .Content .title{
+        width: 300px;
+    }
+    .features .feature1,
+    .features .feature2{
+        width: 140px;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .features{
+        font-size: x-small;
+    }
+    .features .feature1,
+    .features .feature2{
+        font-size: xx-small;
+        width: 125px;
+    }
+    .features .Content .text{
+        width: 270px;
+    }
+    .features .Content .title{
+        width: 270px;
+    }
+}
+@media only screen and (max-width:500px){
+    .features{
+        font-size: x-small;
+        height: 500px;
+    }
+    .features .Content .text{
+        width: 240px;
+    }
+    .features .Content .title{
+        width: 240px;
+    }
+}
